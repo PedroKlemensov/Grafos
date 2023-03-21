@@ -57,10 +57,7 @@ def ciclo_hamiltoniano(grafo):
     for i in grafo.keys():
         vetor_X.append(grafo.get(i))
         # print(vetor_X[aux])
-        print("Vertice")
-        print(i)
-        print("Possui arestas com")
-        print(grafo[i])
+
         auxJ = 0
         for _ in grafo[i]:
 
@@ -76,7 +73,6 @@ def ciclo_hamiltoniano(grafo):
             auxJ += 1
 
         auxI += 1
-        print(">-------------->")
 
     print(" ")
     for o in grafo[len(grafo)]:
@@ -130,6 +126,7 @@ def CheckDirac(grafo):
 
 
 def ORE(grafo):
+
     # ORE
     # seja um grafo n° vertice >=3 e que vertices n adjacentes sua soma de graus seja maior que o n° de vertic
     # d(x)+d(y)>= n° de vertic
@@ -181,27 +178,12 @@ def ORE(grafo):
 # chamando as funçoes pros grafos
 
 def chamada():
-    print("Grafo 1")
-    ciclo_hamiltoniano(grafo1)
-    CheckDirac(grafo1)
-    ORE(grafo1)
 
-    print("")
-    print("Grafo 2")
-    ciclo_hamiltoniano(grafo2)
-    CheckDirac(grafo2)
+
     ORE(grafo2)
 
-    print("")
-    print("Grafo 3")
-    ciclo_hamiltoniano(grafo3)
-    CheckDirac(grafo3)
-    ORE(grafo3)
 
-    print("")
-    print("Grafo 4")
-    ciclo_hamiltoniano(grafo4)
-    CheckDirac(grafo4)
-    ORE(grafo4)
-    
+
+
+
 chamada()

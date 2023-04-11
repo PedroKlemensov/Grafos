@@ -1,5 +1,3 @@
-import random
-
 grafo1 = {
     1: [2,3,6,7],
     2: [1,3,4,5],
@@ -41,7 +39,7 @@ grafo4 = {
 }
 
 grafoEasy = {
-    1: [[2,0],[7,0]],
+    1: [[2,4],[7,2]],
     2: [[1,0],[3,0]],
     3: [[2,0],[4,0]],
     4: [[3,0],[5,0]],
@@ -138,11 +136,26 @@ def Peso_caminho(grafo,peso):
         for j in grafo_peso[i]:
             print(i,j)
 
+def metodoNovo(grafo):
+    grafoaux = grafo
+    atual = 0
+    soma = 0
+    for i in grafoaux.keys():
+        atual = i
+        print(grafoaux [i])
+        menor = 0
+        for j in grafoaux.get():
+            print(grafoaux [i] [j])
 
 
 
 
-Peso_caminho(grafoEasy,peso)
+
+metodoNovo(grafoEasy)
+
+
+
+
 
 
 
